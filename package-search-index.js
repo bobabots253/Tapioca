@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"org.bobabots253.Tapioca"}]
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"org.bobabots253"},{"l":"org.bobabots253.Tapioca"},{"l":"org.bobabots253.Tapioca.utils"}]

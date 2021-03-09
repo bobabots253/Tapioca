@@ -1,1 +1,1 @@
-typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"org.bobabots253.Tapioca","l":"Config"},{"p":"org.bobabots253.Tapioca","l":"Config.DriverConstants"}]
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"org.bobabots253.Tapioca.utils","l":"Calc"},{"p":"org.bobabots253","l":"CompassPOV"},{"p":"org.bobabots253.Tapioca","l":"XboxController.DeadbandAxis"},{"p":"org.bobabots253.Tapioca","l":"POVButton"},{"p":"org.bobabots253.Tapioca","l":"XboxController"}]
