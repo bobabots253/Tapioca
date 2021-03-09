@@ -18,6 +18,7 @@ public class XboxController extends edu.wpi.first.wpilibj.XboxController {
      * Get the virtual {@link JoystickButton} that corresponds to the physical button on the Xbox controller.
      *
      * @param button The {@link Button} to get.
+     * @return A new {@link JoystickButton} object.
      */
     public JoystickButton getButton(Button button) {
         return new JoystickButton(this, button.ordinal());
@@ -27,6 +28,7 @@ public class XboxController extends edu.wpi.first.wpilibj.XboxController {
      * Get the virtual {@link POVButton} that corresponds to the physical button on the Xbox controller.
      *
      * @param direction The directional {@link POVButton} to get.
+     * @return A new {@link POVButton} object.
      */
     public POVButton getButton(CompassPOV direction) {
         return new POVButton(this, direction);
