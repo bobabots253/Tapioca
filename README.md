@@ -2,6 +2,8 @@
 
 [![Build Status][GHAction-image]][GHAction-link]
 [![LICENSE][LICENSE-image]][LICENSE-link]
+[![JitPack][JitPack-image]][JitPack-link]
+[![docs][javadocs-image]][javadocs-link]
 
 A collection of code that shouldn't be redundantly re-written every year.
 
@@ -24,3 +26,7 @@ gradlew.bat build  # Windows
 [GHAction-link]: https://github.com/MillsRoboticsTeam253/Tapioca/actions?query=event%3Apush+branch%3Amaster
 [LICENSE-image]: https://img.shields.io/github/license/MillsRoboticsTeam253/Tapioca
 [LICENSE-link]: https://github.com/MillsRoboticsTeam253/Tapioca/blob/master/LICENSE
+[JitPack-image]: https://jitpack.io/v/org.bobabots253/Tapioca.svg
+[JitPack-link]: https://jitpack.io/#org.bobabots253/Tapioca
+[javadocs-image]: https://github.com/MillsRoboticsTeam253/Tapioca/workflows/docs/badge.svg?branch=master&event=push
+[javadocs-link]: https://MillsRoboticsTeam253.github.io/Tapioca
