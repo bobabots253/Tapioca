@@ -55,4 +55,4 @@ gradlew.bat build  # Windows
 [JitPack-image]: https://jitpack.io/v/org.bobabots253/Tapioca.svg
 [JitPack-link]: https://jitpack.io/#org.bobabots253/Tapioca
 [javadocs-image]: https://github.com/MillsRoboticsTeam253/Tapioca/workflows/docs/badge.svg?branch=master&event=push
-[javadocs-link]: https://MillsRoboticsTeam253.github.io/Tapioca
+[javadocs-link]: https://millsroboticsteam253.github.io/Tapioca/
