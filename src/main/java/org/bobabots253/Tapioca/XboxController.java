@@ -1,6 +1,7 @@
 package org.bobabots253.Tapioca;
 
 import edu.wpi.first.wpilibj2.command.button.JoystickButton;
+import org.bobabots253.CompassPOV;
 import org.bobabots253.Tapioca.utils.Calc;
 
 public class XboxController extends edu.wpi.first.wpilibj.XboxController {
@@ -20,6 +21,15 @@ public class XboxController extends edu.wpi.first.wpilibj.XboxController {
      */
     public JoystickButton getButton(Button button) {
         return new JoystickButton(this, button.ordinal());
+    }
+    
+    /**
+     * Get the virtual {@link POVButton} that corresponds to the physical button on the Xbox controller.
+     *
+     * @param direction The directional {@link POVButton} to get.
+     */
+    public POVButton getButton(CompassPOV direction) {
+        return new POVButton(this, direction);
     }
     
     public enum DeadbandAxis {

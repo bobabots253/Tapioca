@@ -4,6 +4,8 @@ package org.bobabots253;
  * An enum that represents POV in cardinal directions.
  *
  * @author Sebastian Law
+ *
+ * @see org.bobabots253.Tapioca.POVButton
  */
 public enum CompassPOV {
     NORTH,
