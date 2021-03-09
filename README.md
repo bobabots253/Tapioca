@@ -7,6 +7,32 @@
 
 A collection of code that shouldn't be redundantly re-written every year.
 
+Javadocs can be found [here][javadocs-link]
+
+## Usage
+
+Gradle is the current build system for WPILib robot projects.
+
+To install, add the following to the root `build.gradle`
+```groovy
+allprojects {
+    repositories {
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+Then, add Tapioca as a dependency
+```groovy
+dependencies {
+    implementation 'org.bobabots253:Tapioca:2021.1.1' // Replace tag with the latest release if needed
+    
+    // Alternatively, for the latest version on github
+    implementation 'org.bobabots253:Tapioca:master-SNAPSHOT'
+}
+
+```
+
 ## Contributing
 
 Before you get started with contributing to Tapioca, make sure you read [CONTRIBUTING.md](CONTRIBUTING.md).
