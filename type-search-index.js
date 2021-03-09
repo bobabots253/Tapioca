@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"org.bobabots253.Tapioca","l":"Config"},{"p":"org.bobabots253.Tapioca","l":"Config.DriverConstants"}]
