@@ -15,11 +15,8 @@ Gradle is the current build system for WPILib robot projects.
 
 To install, add the following to the root `build.gradle`
 ```groovy
-allprojects {
-    repositories {
-        mavenCentral()
-        maven { url 'https://jitpack.io' }
-    }
+repositories {
+    maven { url 'https://jitpack.io' }
 }
 ```
 Then, add Tapioca as a dependency
