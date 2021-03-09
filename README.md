@@ -5,7 +5,7 @@
 [![JitPack][JitPack-image]][JitPack-link]
 [![docs][javadocs-image]][javadocs-link]
 
-A collection of code that shouldn't be redundantly re-written every year.
+Ingredients for a Boba Bot.
 
 Javadocs can be found [here][javadocs-link]
 
