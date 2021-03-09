@@ -1,5 +1,8 @@
 # Tapioca
 
+[![Build Status][GHAction-image]][GHAction-link]
+[![LICENSE][LICENSE-image]][LICENSE-link]
+
 A collection of code that shouldn't be redundantly re-written every year.
 
 ## Contributing
@@ -16,3 +19,8 @@ cd Tapioca
 ./gradlew build    # Linux, MacOS
 gradlew.bat build  # Windows
 ```
+
+[GHAction-image]: https://github.com/MillsRoboticsTeam253/Tapioca/workflows/CI/badge.svg?branch=master&event=push
+[GHAction-link]: https://github.com/MillsRoboticsTeam253/Tapioca/actions?query=event%3Apush+branch%3Amaster
+[LICENSE-image]: https://img.shields.io/github/license/MillsRoboticsTeam253/Tapioca
+[LICENSE-link]: https://github.com/MillsRoboticsTeam253/Tapioca/blob/master/LICENSE
