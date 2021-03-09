@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+    id 'maven'
+    id 'edu.wpi.first.GradleRIO' version '2021.2.2'
+    id 'idea'
+}
+
+group 'org.bobabots253'
+version '2021.1.1'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // FRC dependencies
+    implementation wpi.deps.wpilib()
+    nativeZip wpi.deps.wpilibJni(wpi.platforms.roborio)
+    nativeDesktopZip wpi.deps.wpilibJni(wpi.platforms.desktop)
+
+    implementation wpi.deps.vendor.java()
+    nativeZip wpi.deps.vendor.jni(wpi.platforms.roborio)
+    nativeDesktopZip wpi.deps.vendor.jni(wpi.platforms.desktop)
+
+    testImplementation 'junit:junit:4.12'
+}
+
+wrapper {
+    gradleVersion = '6.8.1'
+    distributionType = Wrapper.DistributionType.ALL
+}
