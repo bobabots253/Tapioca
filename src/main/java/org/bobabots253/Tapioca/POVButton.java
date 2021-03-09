@@ -1,7 +1,7 @@
 package org.bobabots253.Tapioca;
 
 import edu.wpi.first.wpilibj.GenericHID;
-import org.bobabots253.CompassPOV;
+import org.bobabots253.Tapioca.CompassPOV;
 
 public class POVButton extends edu.wpi.first.wpilibj2.command.button.POVButton {
     /**
