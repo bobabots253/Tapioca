@@ -35,5 +35,11 @@ public class TestDeadband {
         
         // stay at 1
         assertEquals(1, deadband.calculate(1), 0);
+        
+        deadband.setMaximum(0.9);
+        
+        // deadband to maximum
+        assertEquals(1, deadband.calculate(0.9), 0);
+        assertEquals(-1, deadband.calculate(-0.9), 0);
     }
 }
