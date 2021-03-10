@@ -62,6 +62,8 @@ public abstract class Deadband {
     }
     
     /**
+     * Create an instance of Deadband that simply returns the input from {@link #calculate}
+     *
      * @return A dummy Deadband instance that just returns the input from {@link #calculate}.
      */
     public static Deadband dummy() {
