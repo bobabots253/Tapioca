@@ -1,7 +1,6 @@
 package org.bobabots253.Tapioca;
 
 import edu.wpi.first.wpilibj2.command.button.JoystickButton;
-import org.bobabots253.Tapioca.CompassPOV;
 import org.bobabots253.Tapioca.utils.Calc;
 
 public class XboxController extends edu.wpi.first.wpilibj.XboxController {
