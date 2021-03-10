@@ -101,6 +101,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Calculate the deadbanded output based on the input and set deadband.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="org/bobabots253/Tapioca/utils/ExponentialDeadband.html#calculate(double)">calculate(double)</a></span> - Method in class org.bobabots253.Tapioca.utils.<a href="org/bobabots253/Tapioca/utils/ExponentialDeadband.html" title="class in org.bobabots253.Tapioca.utils">ExponentialDeadband</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/bobabots253/Tapioca/utils/LinearDeadband.html#calculate(double)">calculate(double)</a></span> - Method in class org.bobabots253.Tapioca.utils.<a href="org/bobabots253/Tapioca/utils/LinearDeadband.html" title="class in org.bobabots253.Tapioca.utils">LinearDeadband</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/bobabots253/Tapioca/CompassPOV.html" title="enum in org.bobabots253.Tapioca"><span class="typeNameLink">CompassPOV</span></a> - Enum in <a href="org/bobabots253/Tapioca/package-summary.html">org.bobabots253.Tapioca</a></dt>
@@ -120,7 +122,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="memberNameLink"><a href="org/bobabots253/Tapioca/utils/Deadband.html#%3Cinit%3E()">Deadband()</a></span> - Constructor for class org.bobabots253.Tapioca.utils.<a href="org/bobabots253/Tapioca/utils/Deadband.html" title="class in org.bobabots253.Tapioca.utils">Deadband</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/bobabots253/Tapioca/utils/Deadband.html#dummy()">dummy()</a></span> - Static method in class org.bobabots253.Tapioca.utils.<a href="org/bobabots253/Tapioca/utils/Deadband.html" title="class in org.bobabots253.Tapioca.utils">Deadband</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Create an instance of Deadband that simply returns the input from <a href="org/bobabots253/Tapioca/utils/Deadband.html#calculate(double)"><code>Deadband.calculate(double)</code></a></div>
+</dd>
 </dl>
 <a id="I:E">
 <!--   -->
@@ -128,6 +132,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <h2 class="title">E</h2>
 <dl>
 <dt><span class="memberNameLink"><a href="org/bobabots253/Tapioca/CompassPOV.html#EAST">EAST</a></span> - org.bobabots253.Tapioca.<a href="org/bobabots253/Tapioca/CompassPOV.html" title="enum in org.bobabots253.Tapioca">CompassPOV</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/bobabots253/Tapioca/utils/ExponentialDeadband.html" title="class in org.bobabots253.Tapioca.utils"><span class="typeNameLink">ExponentialDeadband</span></a> - Class in <a href="org/bobabots253/Tapioca/utils/package-summary.html">org.bobabots253.Tapioca.utils</a></dt>
+<dd>
+<div class="block">This class can be used to increase your driver's precision at speeds that matter.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/bobabots253/Tapioca/utils/ExponentialDeadband.html#%3Cinit%3E(double)">ExponentialDeadband(double)</a></span> - Constructor for class org.bobabots253.Tapioca.utils.<a href="org/bobabots253/Tapioca/utils/ExponentialDeadband.html" title="class in org.bobabots253.Tapioca.utils">ExponentialDeadband</a></dt>
 <dd>&nbsp;</dd>
 </dl>
 <a id="I:G">
@@ -163,6 +173,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Get the trigger axis value of the controller.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="org/bobabots253/Tapioca/utils/ExponentialDeadband.html#getWeight()">getWeight()</a></span> - Method in class org.bobabots253.Tapioca.utils.<a href="org/bobabots253/Tapioca/utils/ExponentialDeadband.html" title="class in org.bobabots253.Tapioca.utils">ExponentialDeadband</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/bobabots253/Tapioca/XboxController.html#getX(edu.wpi.first.wpilibj.GenericHID.Hand)">getX(GenericHID.Hand)</a></span> - Method in class org.bobabots253.Tapioca.<a href="org/bobabots253/Tapioca/XboxController.html" title="class in org.bobabots253.Tapioca">XboxController</a></dt>
 <dd>
 <div class="block">Get the X axis value of the controller, with deadband applied.</div>
@@ -209,6 +221,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="memberNameLink"><a href="org/bobabots253/Tapioca/utils/Deadband.html#m_deadbandValue">m_deadbandValue</a></span> - Variable in class org.bobabots253.Tapioca.utils.<a href="org/bobabots253/Tapioca/utils/Deadband.html" title="class in org.bobabots253.Tapioca.utils">Deadband</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/bobabots253/Tapioca/utils/Deadband.html#m_maximum">m_maximum</a></span> - Variable in class org.bobabots253.Tapioca.utils.<a href="org/bobabots253/Tapioca/utils/Deadband.html" title="class in org.bobabots253.Tapioca.utils">Deadband</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/bobabots253/Tapioca/utils/ExponentialDeadband.html#m_weight">m_weight</a></span> - Variable in class org.bobabots253.Tapioca.utils.<a href="org/bobabots253/Tapioca/utils/ExponentialDeadband.html" title="class in org.bobabots253.Tapioca.utils">ExponentialDeadband</a></dt>
 <dd>&nbsp;</dd>
 </dl>
 <a id="I:N">
@@ -263,6 +277,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="memberNameLink"><a href="org/bobabots253/Tapioca/utils/Deadband.html#setMaximum(double)">setMaximum(double)</a></span> - Method in class org.bobabots253.Tapioca.utils.<a href="org/bobabots253/Tapioca/utils/Deadband.html" title="class in org.bobabots253.Tapioca.utils">Deadband</a></dt>
 <dd>
 <div class="block">Sets the maximum value to be used for scaling in <a href="org/bobabots253/Tapioca/utils/Deadband.html#calculate(double)"><code>Deadband.calculate(double)</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/bobabots253/Tapioca/utils/ExponentialDeadband.html#setWeight(double)">setWeight(double)</a></span> - Method in class org.bobabots253.Tapioca.utils.<a href="org/bobabots253/Tapioca/utils/ExponentialDeadband.html" title="class in org.bobabots253.Tapioca.utils">ExponentialDeadband</a></dt>
+<dd>
+<div class="block">Sets the weight value to be used for scaling in <a href="org/bobabots253/Tapioca/utils/ExponentialDeadband.html#calculate(double)"><code>ExponentialDeadband.calculate(double)</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="org/bobabots253/Tapioca/CompassPOV.html#SOUTH">SOUTH</a></span> - org.bobabots253.Tapioca.<a href="org/bobabots253/Tapioca/CompassPOV.html" title="enum in org.bobabots253.Tapioca">CompassPOV</a></dt>
 <dd>&nbsp;</dd>
