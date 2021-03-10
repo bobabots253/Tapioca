@@ -1,7 +1,7 @@
 package org.bobabots253.Tapioca;
 
 import edu.wpi.first.wpilibj2.command.button.JoystickButton;
-import org.bobabots253.Tapioca.utils.Calc;
+import org.bobabots253.Tapioca.utils.Deadband;
 
 public class XboxController extends edu.wpi.first.wpilibj.XboxController {
     /**
@@ -11,6 +11,8 @@ public class XboxController extends edu.wpi.first.wpilibj.XboxController {
      */
     public XboxController(int port) {
         super(port);
+        this.m_joystickDeadband = Deadband.dummy();
+        this.m_triggerDeadband = Deadband.dummy();
     }
     
     /**
@@ -38,19 +40,16 @@ public class XboxController extends edu.wpi.first.wpilibj.XboxController {
         TRIGGERS,
     }
     
-    private double m_joystickDeadband = 0.0;
-    private double m_triggerDeadband = 0.0;
+    private Deadband m_joystickDeadband;
+    private Deadband m_triggerDeadband;
     
     /**
-     * Sets the deadband value for this object.
+     * Sets the deadband for this object.
      *
-     * Value are Deadbanded to [-1, -deadband], [deadband, 1],
-     * and rescaled to be linear from (deadband, 0) to (1,1)
-     *
-     * @param deadband The deadband value
+     * @param deadband The deadband to set
      * @param axis The axis to deadband
      */
-    public void setDeadband(double deadband, DeadbandAxis axis) {
+    public void setDeadband(Deadband deadband, DeadbandAxis axis) {
         switch (axis) {
             case JOYSTICKS:
                 this.m_joystickDeadband = deadband;
@@ -70,7 +69,7 @@ public class XboxController extends edu.wpi.first.wpilibj.XboxController {
      */
     public double getTriggerAxis(Hand hand, boolean deadbanded) {
         double val = super.getTriggerAxis(hand);
-        if (deadbanded) val = Calc.applyDeadband(val, m_triggerDeadband);
+        if (deadbanded) val = m_triggerDeadband.calculate(val);
         return val;
     }
     
@@ -94,7 +93,7 @@ public class XboxController extends edu.wpi.first.wpilibj.XboxController {
      */
     public double getX(Hand hand, boolean deadbanded) {
         double val = super.getX(hand);
-        if (deadbanded) val = Calc.applyDeadband(val, m_joystickDeadband);
+        if (deadbanded) val = m_joystickDeadband.calculate(val);
         return val;
     }
     
@@ -118,7 +117,7 @@ public class XboxController extends edu.wpi.first.wpilibj.XboxController {
      */
     public double getY(Hand hand, boolean deadbanded) {
         double val = super.getY(hand);
-        if (deadbanded) val = Calc.applyDeadband(val, m_joystickDeadband);
+        if (deadbanded) val = m_joystickDeadband.calculate(val);
         return val;
     }
     
