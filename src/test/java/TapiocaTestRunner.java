@@ -1,12 +1,8 @@
 import org.bobabots253.Tapioca.utils.Calc;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.Suite;
 
 import static org.junit.Assert.*;
 
-@RunWith(Suite.class)
-@Suite.SuiteClasses({})
 public class TapiocaTestRunner {
     public static class UtilsTest {
         public static class CalcTest {
