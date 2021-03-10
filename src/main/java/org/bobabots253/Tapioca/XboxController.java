@@ -61,6 +61,23 @@ public class XboxController extends edu.wpi.first.wpilibj.XboxController {
     }
     
     /**
+     * Get the deadband for this object.
+     *
+     * @param axis The deadbanded axis.
+     * @return The deadband object for the deadbanded axis.
+     */
+    public Deadband getDeadband(DeadbandAxis axis) {
+        switch (axis) {
+            case JOYSTICKS:
+                return m_joystickDeadband;
+            case TRIGGERS:
+                return m_triggerDeadband;
+            default:
+                throw new AssertionError("Passed invalid DeadbandAxis to getDeadband");
+        }
+    }
+    
+    /**
      * Get the trigger axis value of the controller.
      *
      * @param hand Side of controller whose value should be returned.
