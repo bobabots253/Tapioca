@@ -20,26 +20,44 @@ public class TestDeadband {
         }
     }
     
+    private void testDeadbandMinimum(Deadband deadband) {
+        // constants to reset after
+        double db = deadband.getDeadband(), max = deadband.getMaximum();
+        
+        deadband.setDeadband(0.25);
+        deadband.setMaximum(1);  // don't let maximum affect these tests
+    
+        assertEquals(0, deadband.calculate(0.1), 0);
+        assertEquals(0, deadband.calculate(0.2), 0);
+    
+        deadband.setDeadband(db);
+        deadband.setMaximum(max);
+    }
+    
+    private void testDeadbandMaximum(Deadband deadband) {
+        // constants to reset after
+        double db = deadband.getDeadband(), max = deadband.getMaximum();
+        
+        deadband.setDeadband(0);  // don't let minimum affect these tests
+        deadband.setMaximum(0.9);
+    
+        assertEquals(1, deadband.calculate(0.9), 0);
+        assertEquals(-1, deadband.calculate(-0.9), 0);
+        
+        deadband.setDeadband(db);
+        deadband.setMaximum(max);
+    }
+    
     @Test
     public void testLinearDeadband() {
         final Deadband deadband = new LinearDeadband();
+        
+        testDeadbandMaximum(deadband);
+        testDeadbandMinimum(deadband);
+        
         deadband.setDeadband(0.25);
-        
-        // deadband to zero
-        assertEquals(0, deadband.calculate(0.1), 0);
-        assertEquals(0, deadband.calculate(0.2), 0);
-        
         // scale linearly
         assertEquals(0.3, deadband.calculate(0.5), 0.1);
         assertEquals(0.06, deadband.calculate(0.3), 0.01);
-        
-        // stay at 1
-        assertEquals(1, deadband.calculate(1), 0);
-        
-        deadband.setMaximum(0.9);
-        
-        // deadband to maximum
-        assertEquals(1, deadband.calculate(0.9), 0);
-        assertEquals(-1, deadband.calculate(-0.9), 0);
     }
 }
