@@ -16,7 +16,7 @@ public class LinearDeadband extends Deadband {
         if (abs <= m_deadbandValue) {
             return 0;
         } else if (abs >= m_maximum) {
-            return input;
+            return Math.signum(input);
         } else {
             return (input - Math.signum(input) * m_deadbandValue) / (m_maximum - m_deadbandValue);
         }
