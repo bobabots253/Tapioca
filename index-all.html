@@ -92,28 +92,35 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </nav>
 </header>
 <main role="main">
-<div class="contentContainer"><a href="#I:A">A</a>&nbsp;<a href="#I:C">C</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:J">J</a>&nbsp;<a href="#I:N">N</a>&nbsp;<a href="#I:O">O</a>&nbsp;<a href="#I:P">P</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:T">T</a>&nbsp;<a href="#I:V">V</a>&nbsp;<a href="#I:W">W</a>&nbsp;<a href="#I:X">X</a>&nbsp;<br><a href="allclasses-index.html">All&nbsp;Classes</a>&nbsp;<a href="allpackages-index.html">All&nbsp;Packages</a><a id="I:A">
-<!--   -->
-</a>
-<h2 class="title">A</h2>
-<dl>
-<dt><span class="memberNameLink"><a href="org/bobabots253/Tapioca/utils/Calc.html#applyDeadband(double,double)">applyDeadband(double, double)</a></span> - Static method in class org.bobabots253.Tapioca.utils.<a href="org/bobabots253/Tapioca/utils/Calc.html" title="class in org.bobabots253.Tapioca.utils">Calc</a></dt>
-<dd>
-<div class="block">Deadbands an input to [-1, -deadband], [deadband, 1], rescaling inputs to be
- linear from (deadband, 0) to (1,1)</div>
-</dd>
-</dl>
-<a id="I:C">
+<div class="contentContainer"><a href="#I:C">C</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:J">J</a>&nbsp;<a href="#I:L">L</a>&nbsp;<a href="#I:M">M</a>&nbsp;<a href="#I:N">N</a>&nbsp;<a href="#I:O">O</a>&nbsp;<a href="#I:P">P</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:T">T</a>&nbsp;<a href="#I:V">V</a>&nbsp;<a href="#I:W">W</a>&nbsp;<a href="#I:X">X</a>&nbsp;<br><a href="allclasses-index.html">All&nbsp;Classes</a>&nbsp;<a href="allpackages-index.html">All&nbsp;Packages</a><a id="I:C">
 <!--   -->
 </a>
 <h2 class="title">C</h2>
 <dl>
-<dt><a href="org/bobabots253/Tapioca/utils/Calc.html" title="class in org.bobabots253.Tapioca.utils"><span class="typeNameLink">Calc</span></a> - Class in <a href="org/bobabots253/Tapioca/utils/package-summary.html">org.bobabots253.Tapioca.utils</a></dt>
+<dt><span class="memberNameLink"><a href="org/bobabots253/Tapioca/utils/Deadband.html#calculate(double)">calculate(double)</a></span> - Method in class org.bobabots253.Tapioca.utils.<a href="org/bobabots253/Tapioca/utils/Deadband.html" title="class in org.bobabots253.Tapioca.utils">Deadband</a></dt>
+<dd>
+<div class="block">Calculate the deadbanded output based on the input and set deadband.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/bobabots253/Tapioca/utils/LinearDeadband.html#calculate(double)">calculate(double)</a></span> - Method in class org.bobabots253.Tapioca.utils.<a href="org/bobabots253/Tapioca/utils/LinearDeadband.html" title="class in org.bobabots253.Tapioca.utils">LinearDeadband</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/bobabots253/Tapioca/CompassPOV.html" title="enum in org.bobabots253.Tapioca"><span class="typeNameLink">CompassPOV</span></a> - Enum in <a href="org/bobabots253/Tapioca/package-summary.html">org.bobabots253.Tapioca</a></dt>
 <dd>
 <div class="block">An enum that represents POV in cardinal directions.</div>
 </dd>
+</dl>
+<a id="I:D">
+<!--   -->
+</a>
+<h2 class="title">D</h2>
+<dl>
+<dt><a href="org/bobabots253/Tapioca/utils/Deadband.html" title="class in org.bobabots253.Tapioca.utils"><span class="typeNameLink">Deadband</span></a> - Class in <a href="org/bobabots253/Tapioca/utils/package-summary.html">org.bobabots253.Tapioca.utils</a></dt>
+<dd>
+<div class="block">An abstract class representing an input deadband, with input values in the range [-1, 1]</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/bobabots253/Tapioca/utils/Deadband.html#%3Cinit%3E()">Deadband()</a></span> - Constructor for class org.bobabots253.Tapioca.utils.<a href="org/bobabots253/Tapioca/utils/Deadband.html" title="class in org.bobabots253.Tapioca.utils">Deadband</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/bobabots253/Tapioca/utils/Deadband.html#dummy()">dummy()</a></span> - Static method in class org.bobabots253.Tapioca.utils.<a href="org/bobabots253/Tapioca/utils/Deadband.html" title="class in org.bobabots253.Tapioca.utils">Deadband</a></dt>
+<dd>&nbsp;</dd>
 </dl>
 <a id="I:E">
 <!--   -->
@@ -140,6 +147,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Get the virtual <a href="org/bobabots253/Tapioca/POVButton.html" title="class in org.bobabots253.Tapioca"><code>POVButton</code></a> that corresponds to the physical button on the Xbox controller.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="org/bobabots253/Tapioca/utils/Deadband.html#getDeadband()">getDeadband()</a></span> - Method in class org.bobabots253.Tapioca.utils.<a href="org/bobabots253/Tapioca/utils/Deadband.html" title="class in org.bobabots253.Tapioca.utils">Deadband</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/bobabots253/Tapioca/XboxController.html#getDeadband(org.bobabots253.Tapioca.XboxController.DeadbandAxis)">getDeadband(XboxController.DeadbandAxis)</a></span> - Method in class org.bobabots253.Tapioca.<a href="org/bobabots253/Tapioca/XboxController.html" title="class in org.bobabots253.Tapioca">XboxController</a></dt>
+<dd>
+<div class="block">Get the deadband for this object.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/bobabots253/Tapioca/utils/Deadband.html#getMaximum()">getMaximum()</a></span> - Method in class org.bobabots253.Tapioca.utils.<a href="org/bobabots253/Tapioca/utils/Deadband.html" title="class in org.bobabots253.Tapioca.utils">Deadband</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/bobabots253/Tapioca/XboxController.html#getTriggerAxis(edu.wpi.first.wpilibj.GenericHID.Hand)">getTriggerAxis(GenericHID.Hand)</a></span> - Method in class org.bobabots253.Tapioca.<a href="org/bobabots253/Tapioca/XboxController.html" title="class in org.bobabots253.Tapioca">XboxController</a></dt>
 <dd>
 <div class="block">Get the trigger axis value of the controller, with deadband applied.</div>
@@ -171,6 +186,29 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <h2 class="title">J</h2>
 <dl>
 <dt><span class="memberNameLink"><a href="org/bobabots253/Tapioca/XboxController.DeadbandAxis.html#JOYSTICKS">JOYSTICKS</a></span> - org.bobabots253.Tapioca.<a href="org/bobabots253/Tapioca/XboxController.DeadbandAxis.html" title="enum in org.bobabots253.Tapioca">XboxController.DeadbandAxis</a></dt>
+<dd>&nbsp;</dd>
+</dl>
+<a id="I:L">
+<!--   -->
+</a>
+<h2 class="title">L</h2>
+<dl>
+<dt><a href="org/bobabots253/Tapioca/utils/LinearDeadband.html" title="class in org.bobabots253.Tapioca.utils"><span class="typeNameLink">LinearDeadband</span></a> - Class in <a href="org/bobabots253/Tapioca/utils/package-summary.html">org.bobabots253.Tapioca.utils</a></dt>
+<dd>
+<div class="block">Deadbands an input to <code>[-maximum, -deadband], [deadband, maximum]</code>,
+ rescaling outputs to be linear from <code>[-1, 0], [0, 1]</code></div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/bobabots253/Tapioca/utils/LinearDeadband.html#%3Cinit%3E()">LinearDeadband()</a></span> - Constructor for class org.bobabots253.Tapioca.utils.<a href="org/bobabots253/Tapioca/utils/LinearDeadband.html" title="class in org.bobabots253.Tapioca.utils">LinearDeadband</a></dt>
+<dd>&nbsp;</dd>
+</dl>
+<a id="I:M">
+<!--   -->
+</a>
+<h2 class="title">M</h2>
+<dl>
+<dt><span class="memberNameLink"><a href="org/bobabots253/Tapioca/utils/Deadband.html#m_deadbandValue">m_deadbandValue</a></span> - Variable in class org.bobabots253.Tapioca.utils.<a href="org/bobabots253/Tapioca/utils/Deadband.html" title="class in org.bobabots253.Tapioca.utils">Deadband</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/bobabots253/Tapioca/utils/Deadband.html#m_maximum">m_maximum</a></span> - Variable in class org.bobabots253.Tapioca.utils.<a href="org/bobabots253/Tapioca/utils/Deadband.html" title="class in org.bobabots253.Tapioca.utils">Deadband</a></dt>
 <dd>&nbsp;</dd>
 </dl>
 <a id="I:N">
@@ -214,9 +252,17 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a>
 <h2 class="title">S</h2>
 <dl>
-<dt><span class="memberNameLink"><a href="org/bobabots253/Tapioca/XboxController.html#setDeadband(double,org.bobabots253.Tapioca.XboxController.DeadbandAxis)">setDeadband(double, XboxController.DeadbandAxis)</a></span> - Method in class org.bobabots253.Tapioca.<a href="org/bobabots253/Tapioca/XboxController.html" title="class in org.bobabots253.Tapioca">XboxController</a></dt>
+<dt><span class="memberNameLink"><a href="org/bobabots253/Tapioca/utils/Deadband.html#setDeadband(double)">setDeadband(double)</a></span> - Method in class org.bobabots253.Tapioca.utils.<a href="org/bobabots253/Tapioca/utils/Deadband.html" title="class in org.bobabots253.Tapioca.utils">Deadband</a></dt>
 <dd>
-<div class="block">Sets the deadband value for this object.</div>
+<div class="block">Sets the deadband value to be used in <a href="org/bobabots253/Tapioca/utils/Deadband.html#calculate(double)"><code>Deadband.calculate(double)</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/bobabots253/Tapioca/XboxController.html#setDeadband(org.bobabots253.Tapioca.utils.Deadband,org.bobabots253.Tapioca.XboxController.DeadbandAxis)">setDeadband(Deadband, XboxController.DeadbandAxis)</a></span> - Method in class org.bobabots253.Tapioca.<a href="org/bobabots253/Tapioca/XboxController.html" title="class in org.bobabots253.Tapioca">XboxController</a></dt>
+<dd>
+<div class="block">Sets the deadband for this object.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/bobabots253/Tapioca/utils/Deadband.html#setMaximum(double)">setMaximum(double)</a></span> - Method in class org.bobabots253.Tapioca.utils.<a href="org/bobabots253/Tapioca/utils/Deadband.html" title="class in org.bobabots253.Tapioca.utils">Deadband</a></dt>
+<dd>
+<div class="block">Sets the maximum value to be used for scaling in <a href="org/bobabots253/Tapioca/utils/Deadband.html#calculate(double)"><code>Deadband.calculate(double)</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="org/bobabots253/Tapioca/CompassPOV.html#SOUTH">SOUTH</a></span> - org.bobabots253.Tapioca.<a href="org/bobabots253/Tapioca/CompassPOV.html" title="enum in org.bobabots253.Tapioca">CompassPOV</a></dt>
 <dd>&nbsp;</dd>
@@ -279,7 +325,7 @@ the order they are declared.</div>
 <dt><a href="org/bobabots253/Tapioca/XboxController.DeadbandAxis.html" title="enum in org.bobabots253.Tapioca"><span class="typeNameLink">XboxController.DeadbandAxis</span></a> - Enum in <a href="org/bobabots253/Tapioca/package-summary.html">org.bobabots253.Tapioca</a></dt>
 <dd>&nbsp;</dd>
 </dl>
-<a href="#I:A">A</a>&nbsp;<a href="#I:C">C</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:J">J</a>&nbsp;<a href="#I:N">N</a>&nbsp;<a href="#I:O">O</a>&nbsp;<a href="#I:P">P</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:T">T</a>&nbsp;<a href="#I:V">V</a>&nbsp;<a href="#I:W">W</a>&nbsp;<a href="#I:X">X</a>&nbsp;<br><a href="allclasses-index.html">All&nbsp;Classes</a>&nbsp;<a href="allpackages-index.html">All&nbsp;Packages</a></div>
+<a href="#I:C">C</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:J">J</a>&nbsp;<a href="#I:L">L</a>&nbsp;<a href="#I:M">M</a>&nbsp;<a href="#I:N">N</a>&nbsp;<a href="#I:O">O</a>&nbsp;<a href="#I:P">P</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:T">T</a>&nbsp;<a href="#I:V">V</a>&nbsp;<a href="#I:W">W</a>&nbsp;<a href="#I:X">X</a>&nbsp;<br><a href="allclasses-index.html">All&nbsp;Classes</a>&nbsp;<a href="allpackages-index.html">All&nbsp;Packages</a></div>
 </main>
 <footer role="contentinfo">
 <nav role="navigation">

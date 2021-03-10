@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -238,13 +238,20 @@ extends <a href="https://first.wpi.edu/wpilib/allwpilib/docs/release/java/edu/wp
 </td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="utils/Deadband.html" title="class in org.bobabots253.Tapioca.utils">Deadband</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDeadband(org.bobabots253.Tapioca.XboxController.DeadbandAxis)">getDeadband</a></span>&#8203;(<a href="XboxController.DeadbandAxis.html" title="enum in org.bobabots253.Tapioca">XboxController.DeadbandAxis</a>&nbsp;axis)</code></th>
+<td class="colLast">
+<div class="block">Get the deadband for this object.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTriggerAxis(edu.wpi.first.wpilibj.GenericHID.Hand)">getTriggerAxis</a></span>&#8203;(<a href="https://first.wpi.edu/wpilib/allwpilib/docs/release/java/edu/wpi/first/wpilibj/GenericHID.Hand.html?is-external=true" title="class or interface in edu.wpi.first.wpilibj" class="externalLink">GenericHID.Hand</a>&nbsp;hand)</code></th>
 <td class="colLast">
 <div class="block">Get the trigger axis value of the controller, with deadband applied.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTriggerAxis(edu.wpi.first.wpilibj.GenericHID.Hand,boolean)">getTriggerAxis</a></span>&#8203;(<a href="https://first.wpi.edu/wpilib/allwpilib/docs/release/java/edu/wpi/first/wpilibj/GenericHID.Hand.html?is-external=true" title="class or interface in edu.wpi.first.wpilibj" class="externalLink">GenericHID.Hand</a>&nbsp;hand,
               boolean&nbsp;deadbanded)</code></th>
@@ -252,14 +259,14 @@ extends <a href="https://first.wpi.edu/wpilib/allwpilib/docs/release/java/edu/wp
 <div class="block">Get the trigger axis value of the controller.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getX(edu.wpi.first.wpilibj.GenericHID.Hand)">getX</a></span>&#8203;(<a href="https://first.wpi.edu/wpilib/allwpilib/docs/release/java/edu/wpi/first/wpilibj/GenericHID.Hand.html?is-external=true" title="class or interface in edu.wpi.first.wpilibj" class="externalLink">GenericHID.Hand</a>&nbsp;hand)</code></th>
 <td class="colLast">
 <div class="block">Get the X axis value of the controller, with deadband applied.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getX(edu.wpi.first.wpilibj.GenericHID.Hand,boolean)">getX</a></span>&#8203;(<a href="https://first.wpi.edu/wpilib/allwpilib/docs/release/java/edu/wpi/first/wpilibj/GenericHID.Hand.html?is-external=true" title="class or interface in edu.wpi.first.wpilibj" class="externalLink">GenericHID.Hand</a>&nbsp;hand,
     boolean&nbsp;deadbanded)</code></th>
@@ -267,14 +274,14 @@ extends <a href="https://first.wpi.edu/wpilib/allwpilib/docs/release/java/edu/wp
 <div class="block">Get the X axis value of the controller.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getY(edu.wpi.first.wpilibj.GenericHID.Hand)">getY</a></span>&#8203;(<a href="https://first.wpi.edu/wpilib/allwpilib/docs/release/java/edu/wpi/first/wpilibj/GenericHID.Hand.html?is-external=true" title="class or interface in edu.wpi.first.wpilibj" class="externalLink">GenericHID.Hand</a>&nbsp;hand)</code></th>
 <td class="colLast">
 <div class="block">Get the Y axis value of the controller, with deadband applied.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getY(edu.wpi.first.wpilibj.GenericHID.Hand,boolean)">getY</a></span>&#8203;(<a href="https://first.wpi.edu/wpilib/allwpilib/docs/release/java/edu/wpi/first/wpilibj/GenericHID.Hand.html?is-external=true" title="class or interface in edu.wpi.first.wpilibj" class="externalLink">GenericHID.Hand</a>&nbsp;hand,
     boolean&nbsp;deadbanded)</code></th>
@@ -282,12 +289,12 @@ extends <a href="https://first.wpi.edu/wpilib/allwpilib/docs/release/java/edu/wp
 <div class="block">Get the Y axis value of the controller.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDeadband(double,org.bobabots253.Tapioca.XboxController.DeadbandAxis)">setDeadband</a></span>&#8203;(double&nbsp;deadband,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDeadband(org.bobabots253.Tapioca.utils.Deadband,org.bobabots253.Tapioca.XboxController.DeadbandAxis)">setDeadband</a></span>&#8203;(<a href="utils/Deadband.html" title="class in org.bobabots253.Tapioca.utils">Deadband</a>&nbsp;deadband,
            <a href="XboxController.DeadbandAxis.html" title="enum in org.bobabots253.Tapioca">XboxController.DeadbandAxis</a>&nbsp;axis)</code></th>
 <td class="colLast">
-<div class="block">Sets the deadband value for this object.</div>
+<div class="block">Sets the deadband for this object.</div>
 </td>
 </tr>
 </table>
@@ -384,22 +391,35 @@ extends <a href="https://first.wpi.edu/wpilib/allwpilib/docs/release/java/edu/wp
 </dl>
 </li>
 </ul>
-<a id="setDeadband(double,org.bobabots253.Tapioca.XboxController.DeadbandAxis)">
+<a id="setDeadband(org.bobabots253.Tapioca.utils.Deadband,org.bobabots253.Tapioca.XboxController.DeadbandAxis)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setDeadband</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setDeadband&#8203;(double&nbsp;deadband,
+<pre class="methodSignature">public&nbsp;void&nbsp;setDeadband&#8203;(<a href="utils/Deadband.html" title="class in org.bobabots253.Tapioca.utils">Deadband</a>&nbsp;deadband,
                         <a href="XboxController.DeadbandAxis.html" title="enum in org.bobabots253.Tapioca">XboxController.DeadbandAxis</a>&nbsp;axis)</pre>
-<div class="block">Sets the deadband value for this object.
-
- Value are Deadbanded to [-1, -deadband], [deadband, 1],
- and rescaled to be linear from (deadband, 0) to (1,1)</div>
+<div class="block">Sets the deadband for this object.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>deadband</code> - The deadband value</dd>
+<dd><code>deadband</code> - The deadband to set</dd>
 <dd><code>axis</code> - The axis to deadband</dd>
+</dl>
+</li>
+</ul>
+<a id="getDeadband(org.bobabots253.Tapioca.XboxController.DeadbandAxis)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDeadband</h4>
+<pre class="methodSignature">public&nbsp;<a href="utils/Deadband.html" title="class in org.bobabots253.Tapioca.utils">Deadband</a>&nbsp;getDeadband&#8203;(<a href="XboxController.DeadbandAxis.html" title="enum in org.bobabots253.Tapioca">XboxController.DeadbandAxis</a>&nbsp;axis)</pre>
+<div class="block">Get the deadband for this object.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>axis</code> - The deadbanded axis.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The deadband object for the deadbanded axis.</dd>
 </dl>
 </li>
 </ul>
