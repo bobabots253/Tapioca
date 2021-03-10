@@ -1,6 +1,7 @@
 package utils;
 
 import org.bobabots253.Tapioca.utils.Deadband;
+import org.bobabots253.Tapioca.utils.ExponentialDeadband;
 import org.bobabots253.Tapioca.utils.LinearDeadband;
 import org.junit.Test;
 
@@ -59,5 +60,23 @@ public class TestDeadband {
         // scale linearly
         assertEquals(0.3, deadband.calculate(0.5), 0.1);
         assertEquals(0.06, deadband.calculate(0.3), 0.01);
+    }
+    
+    @Test
+    public void testExponentialDeadband() {
+        final Deadband deadband = new ExponentialDeadband(2);
+    
+        testDeadbandMaximum(deadband);
+        testDeadbandMinimum(deadband);
+        
+        deadband.setDeadband(0.07);
+        deadband.setMaximum(0.9);
+        
+        // scale exponentially
+        assertEquals(-1, deadband.calculate(-1), 0);
+        assertEquals(-0.047031499, deadband.calculate(-0.25), 0.000000001);
+        assertEquals(0, deadband.calculate(0), 0);
+        assertEquals(0.2683989, deadband.calculate(0.5), 0.0000001);
+        assertEquals(1, deadband.calculate(0.9), 0);
     }
 }
