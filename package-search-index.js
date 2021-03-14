@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"org.bobabots253.Tapioca"},{"l":"org.bobabots253.Tapioca.utils"}]
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"org.bobabots253.Tapioca"},{"l":"org.bobabots253.Tapioca.commands"},{"l":"org.bobabots253.Tapioca.subsystems"},{"l":"org.bobabots253.Tapioca.utils"}]
