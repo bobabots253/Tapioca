@@ -37,19 +37,18 @@ Before you get started with contributing to Tapioca, make sure you read [CONTRIB
 Now you can get started:
 ```shell
 # clone the repository
-git clone https://github.com/MillsRoboticsTeam253/Tapioca.git
+git clone https://github.com/bobabots253/Tapioca.git
 # cd into Tapioca
 cd Tapioca
 # Run tests and build:
-./gradlew build    # Linux, MacOS
-gradlew.bat build  # Windows
+./gradlew build
 ```
 
-[GHAction-image]: https://github.com/MillsRoboticsTeam253/Tapioca/workflows/CI/badge.svg?branch=master&event=push
-[GHAction-link]: https://github.com/MillsRoboticsTeam253/Tapioca/actions?query=event%3Apush+branch%3Amaster
-[LICENSE-image]: https://img.shields.io/github/license/MillsRoboticsTeam253/Tapioca
-[LICENSE-link]: https://github.com/MillsRoboticsTeam253/Tapioca/blob/master/LICENSE
+[GHAction-image]: https://github.com/bobabots253/Tapioca/workflows/CI/badge.svg?branch=master&event=push
+[GHAction-link]: https://github.com/bobabots253/Tapioca/actions?query=event%3Apush+branch%3Amaster
+[LICENSE-image]: https://img.shields.io/github/license/bobabots253/Tapioca
+[LICENSE-link]: https://github.com/bobabots253/Tapioca/blob/master/LICENSE
 [JitPack-image]: https://jitpack.io/v/org.bobabots253/Tapioca.svg
 [JitPack-link]: https://jitpack.io/#org.bobabots253/Tapioca
-[javadocs-image]: https://github.com/MillsRoboticsTeam253/Tapioca/workflows/docs/badge.svg?branch=master&event=push
-[javadocs-link]: https://millsroboticsteam253.github.io/Tapioca/
+[javadocs-image]: https://github.com/bobabots253/Tapioca/workflows/docs/badge.svg?branch=master&event=push
+[javadocs-link]: https://bobabots253.github.io/Tapioca/
